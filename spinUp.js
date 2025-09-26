@@ -13,7 +13,7 @@ function spinServer() {
 }
 
 module.exports = function () {
-  cron.schedule('* * * * *', () => {
+  cron.schedule('*/10 * * * *', () => {
     console.log('⏰ Running cron job every 10 minutes');
     spinServer();
   });

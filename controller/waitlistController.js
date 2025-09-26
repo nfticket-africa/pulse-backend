@@ -23,7 +23,7 @@ exports.joinWaitlist = async (req, res) => {
     await newEntry.save();
     return res.status(201).json({
       status: 'success',
-      message: 'Successfully added to the waitlist',
+      message: 'Successfully joined the waitlist',
     });
   } catch (error) {
     console.error('Error adding to waitlist:', error);

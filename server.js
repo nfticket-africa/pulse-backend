@@ -4,6 +4,8 @@ dotenv.config({ path: 'config.env' });
 const app = require('./app');
 const spinUp = require('./spinUp');
 
+app.set('trust proxy', ['loopback', 'linklocal', 'uniquelocal']);
+
 console.log('NODE_ENV:', process.env.NODE_ENV);
 
 const DB = process.env.DATABASE.replace(

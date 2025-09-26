@@ -8,8 +8,8 @@ if (process.env.NODE_ENV === 'development') {
   console.log('NODE_ENV:', process.env.NODE_ENV);
 }
 
-// app.set('trust proxy', 1);
-// console.log('trust proxy setting:', app.get('trust proxy'));
+app.set('trust proxy', 1);
+console.log('trust proxy setting:', app.get('trust proxy'));
 
 const limiter = rateLimit({
   max: 100,

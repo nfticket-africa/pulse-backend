@@ -5,4 +5,6 @@ const router = express.Router();
 
 router.post('/join-waitlist', waitlistController.joinWaitlist);
 
+router.get('/ping', waitlistController.ping);
+
 module.exports = router;

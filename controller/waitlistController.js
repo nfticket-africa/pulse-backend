@@ -30,3 +30,7 @@ exports.joinWaitlist = async (req, res) => {
     return res.status(500).json({ message: 'Internal server error' });
   }
 };
+
+exports.ping = (req, res) => {
+  res.status(200).json({ status: 'success', message: 'Server is alive' });
+};
